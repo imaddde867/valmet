@@ -2,8 +2,8 @@ import viser
 import numpy as np
 from plyfile import PlyData
 
-# Lire le fichier PLY
-plydata = PlyData.read("PLY files/pilot_plant_devices.ply")
+# Lire le fichier PLY depuis le dossier assets
+plydata = PlyData.read("assets/pointclouds/pilot_plant_devices.ply")
 vertex = plydata['vertex']
 
 # Extraire les positions
