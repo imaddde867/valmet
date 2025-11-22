@@ -1,25 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  min-height: 100vh;
   padding: 2rem;
-  background: #111;
-  color: #f1f1f1;
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: #f5f7ff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #020610;
 }
 
-main {
-  max-width: 960px;
-  margin: 0 auto;
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("../assets/horsey.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.35);
+  z-index: -1;
 }
 
-#frameCanvas {
+.app {
+  width: min(1200px, 100%);
+  display: flex;
+  gap: 24px;
+  backdrop-filter: blur(6px);
+  background: rgba(2, 6, 16, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.viewer {
+  position: relative;
+  flex: 1 1 60%;
+}
+
+.viewer video,
+.viewer canvas {
   display: block;
   width: 100%;
-  max-width: 640px;
-  border: 1px solid #444;
+  height: auto;
+  border-radius: 16px;
   background: #000;
 }
 
-#log {
-  margin-top: 1rem;
+.viewer canvas {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.controls {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.panel {
+  background: rgba(3, 8, 18, 0.85);
+  border-radius: 14px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.panel h2 {
+  margin: 0 0 8px;
   font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.slider-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+.stats {
+  min-height: 48px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.filters label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+.filters label + label {
+  margin-top: 6px;
+}
+
+@media (max-width: 960px) {
+  .app {
+    flex-direction: column;
+  }
+  .controls,
+  .viewer {
+    flex: 1 1 auto;
+  }
 }
