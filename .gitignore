@@ -3,3 +3,4 @@ venv
 .DS_Store
 node_modules
 AGENTS.md
+nsenv
