@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background: #111;
+  color: #f1f1f1;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#frameCanvas {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  border: 1px solid #444;
+  background: #000;
+}
+
+#log {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
