@@ -19,6 +19,8 @@ function parseArgs(argv) {
     labels: 'web/models/tfjs_baseline/tensorflow_automl_model/model-197536060022980608_tf-js_2023-05-04T05_50_49.038047Z_dict.txt',
     videoName: 'Pilot_plant.mp4',
     thresholds: null,
+    maxDets: 200,
+    iouThreshold: 0.5,
   };
 
   for (let i = 0; i < argv.length; i++) {
@@ -52,6 +54,14 @@ function parseArgs(argv) {
         break;
       case '--thresholds':
         args.thresholds = value;
+        i++;
+        break;
+      case '--max-dets':
+        args.maxDets = Number(value);
+        i++;
+        break;
+      case '--iou-threshold':
+        args.iouThreshold = Number(value);
         i++;
         break;
       default:
@@ -109,6 +119,41 @@ function makeDetId(frameIndex, bbox, clsLabel) {
   return hash.slice(0, 16);
 }
 
+function computeIoU(boxA, boxB) {
+  const [yminA, xminA, ymaxA, xmaxA] = boxA;
+  const [yminB, xminB, ymaxB, xmaxB] = boxB;
+  const interYMin = Math.max(yminA, yminB);
+  const interXMin = Math.max(xminA, xminB);
+  const interYMax = Math.min(ymaxA, ymaxB);
+  const interXMax = Math.min(xmaxA, xmaxB);
+  const interArea = Math.max(0, interYMax - interYMin) * Math.max(0, interXMax - interXMin);
+  const areaA = Math.max(0, ymaxA - yminA) * Math.max(0, xmaxA - xminA);
+  const areaB = Math.max(0, ymaxB - yminB) * Math.max(0, xmaxB - xminB);
+  const unionArea = areaA + areaB - interArea + 1e-9;
+  return interArea / unionArea;
+}
+
+function applyNms(detections, maxDetections, iouThreshold) {
+  const sorted = [...detections].sort((a, b) => b.conf - a.conf);
+  const kept = [];
+  for (const det of sorted) {
+    let keep = true;
+    for (const existing of kept) {
+      if (det.cls === existing.cls && computeIoU(det.bbox, existing.bbox) > iouThreshold) {
+        keep = false;
+        break;
+      }
+    }
+    if (keep) {
+      kept.push(det);
+      if (kept.length >= maxDetections) {
+        break;
+      }
+    }
+  }
+  return kept;
+}
+
 async function main() {
   const args = parseArgs(process.argv.slice(2));
   const manifestPath = path.resolve(args.manifest);
@@ -137,42 +182,107 @@ async function main() {
 
     const frameStart = process.hrtime.bigint();
     const pred = await model.executeAsync(inputTensor);
+    if (entry === manifest[0]) {
+      if (Array.isArray(pred)) {
+        console.log(
+          'Output tensor shapes:',
+          pred.map((tensor) => tensor.shape)
+        );
+      } else {
+        console.log('Output tensor shape:', pred.shape);
+      }
+    }
     const frameEnd = process.hrtime.bigint();
     const elapsedMs = Number(frameEnd - frameStart) / 1e6;
 
     const detections = [];
 
-    const boxesTensor = Array.isArray(pred) ? pred[0] : pred;
-    const classesTensor = Array.isArray(pred) ? pred[1] : null;
-    const scoresTensor = Array.isArray(pred) ? pred[2] : null;
-    let boxes = await boxesTensor.array();
-    let classes = classesTensor ? await classesTensor.array() : [];
-    let scores = scoresTensor ? await scoresTensor.array() : [];
+    let boxesTensor;
+    let scoresTensor;
+    if (Array.isArray(pred)) {
+      if (pred.length === 1) {
+        boxesTensor = pred[0];
+      } else {
+        for (const tensor of pred) {
+          const shape = tensor.shape || [];
+          const rank = shape.length;
+          const lastDim = shape[rank - 1];
+          if ((rank === 2 && lastDim === 4) || (rank >= 3 && lastDim === 4)) {
+            boxesTensor = tensor;
+          } else if (rank >= 2) {
+            scoresTensor = tensor;
+          }
+        }
+      }
+    } else {
+      boxesTensor = pred;
+    }
 
-    const detectionsCount = boxes[0]?.length || 0;
+    if (!boxesTensor || !scoresTensor) {
+      console.warn(
+        'Unable to determine boxes/scores tensors for frame',
+        entry.frame_index,
+        'shapes',
+        pred && Array.isArray(pred) ? pred.map((t) => t.shape) : boxesTensor?.shape
+      );
+      if (Array.isArray(pred)) {
+        pred.forEach((tensor) => tensor.dispose());
+      } else {
+        pred.dispose();
+      }
+      inputTensor.dispose();
+      imageTensor.dispose();
+      continue;
+    }
+
+    const boxes = await boxesTensor.array();
+    const scores = await scoresTensor.array();
+    const boxList =
+      Array.isArray(boxes[0]) && Array.isArray(boxes[0][0]) ? boxes[0] : boxes;
+    const scoreList =
+      Array.isArray(scores[0]) && Array.isArray(scores[0][0]) ? scores[0] : scores;
+    const detectionsCount = Math.min(boxList.length || 0, scoreList.length || 0);
+
     for (let i = 0; i < detectionsCount; i++) {
-      const score = scores[0]?.[i] ?? 0;
-      const classIdx = Math.round(classes[0]?.[i] ?? -1);
-      const label = labels[classIdx] || `class_${classIdx}`;
-      const threshold = getThreshold(label, thresholdMap);
-      if (score < threshold) {
+      const classScores = scoreList[i] || [];
+      const probabilities = classScores.map((logit) => 1 / (1 + Math.exp(-logit)));
+      const backgroundOffset =
+        labels.length && labels[0].toLowerCase() === 'background' ? 1 : 0;
+      let bestIdx = -1;
+      let bestScore = -Infinity;
+      for (let idx = backgroundOffset; idx < probabilities.length; idx++) {
+        const value = probabilities[idx];
+        if (value > bestScore) {
+          bestScore = value;
+          bestIdx = idx;
+        }
+      }
+
+      if (bestIdx < 0) {
         continue;
       }
-      const bbox = boxes[0][i];
+
+      const label = labels[bestIdx] || `class_${bestIdx}`;
+      const threshold = getThreshold(label, thresholdMap);
+      if (bestScore < threshold) {
+        continue;
+      }
+
+      const bbox = boxList[i];
       const detId = makeDetId(entry.frame_index, bbox, label);
-      const conf = score;
-      const logit = Math.log(conf / Math.max(1 - conf, 1e-6));
       detections.push({
         id: detId,
         cls: label,
-        conf,
+        conf: bestScore,
         bbox,
-        logit,
+        logits: classScores,
       });
     }
 
+    const kept = applyNms(detections, args.maxDets, args.iouThreshold);
+
     console.log(
-      `Frame ${entry.frame_index} @ ${entry.timestamp_sec}s -> ${detections.length} dets (${elapsedMs.toFixed(
+      `Frame ${entry.frame_index} @ ${entry.timestamp_sec}s -> ${kept.length} dets (${elapsedMs.toFixed(
         2
       )} ms)`
     );
@@ -180,7 +290,7 @@ async function main() {
     results.push({
       i: entry.frame_index,
       t: entry.timestamp_sec,
-      dets: detections,
+      dets: kept,
     });
 
     if (Array.isArray(pred)) {

@@ -40,6 +40,18 @@ def parse_args() -> argparse.Namespace:
         help="Optional JSON string or path to JSON file with per-class thresholds.",
     )
     parser.add_argument(
+        "--max-dets",
+        type=int,
+        default=200,
+        help="Maximum detections to retain per frame after NMS (default: 200).",
+    )
+    parser.add_argument(
+        "--iou-threshold",
+        type=float,
+        default=0.5,
+        help="IoU threshold for NMS (default: 0.5).",
+    )
+    parser.add_argument(
         "--node-script",
         type=Path,
         default=Path(__file__).with_name("run_tfjs_inference.js"),
@@ -72,6 +84,8 @@ def main() -> None:
     ]
     if args.thresholds:
         cmd.extend(["--thresholds", str(args.thresholds)])
+    cmd.extend(["--max-dets", str(args.max_dets)])
+    cmd.extend(["--iou-threshold", str(args.iou_threshold)])
 
     print("Running:", " ".join(map(str, cmd)))
     subprocess.run(cmd, check=True)
