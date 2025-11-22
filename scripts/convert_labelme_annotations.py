@@ -23,7 +23,7 @@ def parse_args() -> argparse.Namespace:
         "--manifest",
         type=Path,
         required=True,
-        help="Frame manifest JSON produced by sample_video_frames.py",
+        help="Frame manifest JSON produced by frame_sampler.py",
     )
     parser.add_argument(
         "--output",
@@ -42,7 +42,19 @@ def parse_args() -> argparse.Namespace:
 
 def load_manifest(path: Path) -> Dict[str, Dict[str, object]]:
     data = json.loads(path.read_text())
-    return {entry["filename"]: entry for entry in data}
+    lookup: Dict[str, Dict[str, object]] = {}
+    for entry in data:
+        filename = entry.get("filename")
+        if filename:
+            lookup[filename] = entry
+        annotation_name = entry.get("annotation_filename")
+        if annotation_name:
+            lookup[annotation_name] = entry
+        for variant in entry.get("variants", {}).values():
+            variant_name = variant.get("filename")
+            if variant_name:
+                lookup[variant_name] = entry
+    return lookup
 
 
 def load_class_map(path_str: str | None) -> Dict[str, str]:
