@@ -1,0 +1,74 @@
+{
+  "videos": [
+    {
+      "path": "assets/videos/Coffee_place.mp4",
+      "width": 3432,
+      "height": 1300,
+      "frame_count": 1592,
+      "fps": 24.33,
+      "duration_seconds": 65.433
+    },
+    {
+      "path": "assets/videos/Pilot_plant.mp4",
+      "width": 1280,
+      "height": 960,
+      "frame_count": 2250,
+      "fps": 30.0,
+      "duration_seconds": 75.0
+    },
+    {
+      "path": "assets/videos/comparison_splat_and_mesh.mp4",
+      "width": 3424,
+      "height": 1196,
+      "frame_count": 838,
+      "fps": 24.575,
+      "duration_seconds": 34.1
+    },
+    {
+      "path": "assets/videos/corridor.mp4",
+      "width": 3432,
+      "height": 1300,
+      "frame_count": 533,
+      "fps": 24.487,
+      "duration_seconds": 21.767
+    }
+  ],
+  "pointclouds": [
+    {
+      "path": "assets/pointclouds/cellar_devices.ply",
+      "vertex_count": 335847
+    },
+    {
+      "path": "assets/pointclouds/library.ply",
+      "vertex_count": 1922900
+    },
+    {
+      "path": "assets/pointclouds/lounge_area.ply",
+      "vertex_count": 397536
+    },
+    {
+      "path": "assets/pointclouds/pilot_plant_devices.ply",
+      "vertex_count": 653751
+    }
+  ],
+  "meshes": [
+    {
+      "path": "assets/meshes/cellar_devices.glb",
+      "geometry_count": 1,
+      "total_vertices": 335847,
+      "total_faces": 0
+    },
+    {
+      "path": "assets/meshes/lounge_area.glb",
+      "geometry_count": 1,
+      "total_vertices": 397536,
+      "total_faces": 0
+    },
+    {
+      "path": "assets/meshes/pilot_plant_devices.glb",
+      "geometry_count": 1,
+      "total_vertices": 653751,
+      "total_faces": 0
+    }
+  ]
+}
