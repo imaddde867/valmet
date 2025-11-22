@@ -48,10 +48,14 @@ body::before {
   width: 100%;
   height: auto;
   border-radius: 16px;
+}
+.viewer video {
+  aspect-ratio: 4 / 3;
   background: #000;
 }
 
 .viewer canvas {
+  background: transparent;
   position: absolute;
   inset: 0;
   pointer-events: none;
