@@ -1,0 +1,194 @@
+# Valmet Field Device Detector – Repository Inspection Report
+
+_Generated on request after reviewing the entire `/Users/imadeddine/Documents/GitHub/valmet` repository, the PDF plan in `docs/READ_THIS.pdf`, and the challenge briefs in `docs/Valmet_challenge.pdf` and `docs/Since_AI_2025_Valmet_challenge.pdf`._
+
+---
+
+## 1. Source Material Reviewed
+
+- **Hackathon plan** (`docs/PLAN.md` + `docs/READ_THIS.pdf`): four-day roadmap covering Workstream A (2D/Vision) and Workstream B (3D/UI), success metrics, schemas, risks, and deliverables.
+- **Challenge briefs** (`docs/Valmet_challenge.pdf`, `docs/Since_AI_2025_Valmet_challenge.pdf`): describe the “Field Device Detector” ask—accurate, fast detection of field devices to populate a 3D Gaussian splat digital twin and power remote support tooling.
+- **Repository documentation** (`readme.md`, `project_structure.md`, `AGENTS.md`, `docs/frame_sampling.md`) plus all scripts under `scripts/`, data artifacts under `assets/`, generated outputs, and the `web/` demo.
+
+The findings below align the implemented work against those references.
+
+---
+
+## 2. Repository Inventory
+
+### 2.1 Data Assets (`assets/`, duplicated for static serving under `web/assets/`)
+
+| Asset | Stats (from `assets_manifest.json`) | Notes |
+| --- | --- | --- |
+| `assets/videos/Pilot_plant.mp4` | 1280×960, 2,250 frames, 30 FPS, 75 s | Primary video referenced throughout the plan and used for current detections. |
+| `assets/videos/Coffee_place.mp4` | 3,432×1,300, 1,592 frames, 24.33 FPS, 65.4 s | Listed in PLAN but no derived outputs yet. |
+| `assets/videos/corridor.mp4` | 3,432×1,300, 533 frames, 24.49 FPS, 21.8 s | Listed in PLAN; unused. |
+| `assets/videos/comparison_splat_and_mesh.mp4` | 3,424×1,196, 834 frames, 24.6 FPS, 34.1 s | Extra clip not referenced in PLAN; validator (`scripts/validate_assets.py`) will flag it. |
+| `assets/pointclouds/*.ply` | Pilot plant (653,751 pts), lounge area (397,536), library (1,922,900), cellar (335,847) | Provide 3D Gaussian splats but only inspected via standalone Python viewers. |
+| `assets/meshes/*.glb` | GLB conversions mirroring the PLY list | No usage outside of `scripts/validate_assets.py`. |
+| `assets/images/Devices.png` | Device reference sheet. |
+| `assets/horsey.jpg` | Background art used in `web/style.css`. |
+
+The `annotations/heldout_frames/` directory stores high-resolution PNGs plus `heldout_manifest.json`, but there are **no labeled JSON annotations**, so nothing currently feeds `scripts/eval_detections.py`.
+
+### 2.2 Automation, Tooling, and Supporting Scripts (`scripts/`)
+
+- `frame_sampler.py`: Samples frames from a video, produces low-resolution model frames and optional high-quality annotation frames, and writes `outputs/frame_manifest.json`. Configurable interpolation, cadence, and JPEG/PNG settings; described in `docs/frame_sampling.md`. Current manifest holds 188 sampled frames with both 224×224 (“model”) and full-resolution (“annotation”) variants.
+- `tfjs_inference.py` + `tfjs_inference_node.js`: Python CLI wraps a Node.js helper that loads the AutoML TFJS graph from `web/models/tfjs_baseline/`, runs inference on frames defined in the manifest, applies sigmoid + per-class thresholds (from `config/thresholds.json`), enforces per-class NMS (up to 200 detections/frame), and writes `outputs/detections/pilot_plant.json`.
+- `convert_labelme_annotations.py`: Converts per-frame LabelMe exports into the repo’s detection schema, using the manifest to recover scale factors. Not exercised yet because no LabelMe JSON exists.
+- `eval_detections.py`: Computes per-class precision/recall/mAP by matching detection JSON against a ground-truth JSON. Also supports sweeping thresholds. Currently unused because no ground-truth JSON is committed.
+- `validate_assets.py`: Scans `assets/` and regenerates `assets_manifest.json`, warning if PLAN.md fails to mention a file (e.g., `assets/videos/comparison_splat_and_mesh.mp4`).
+- `viewer_viser.py` and `viewer_gsplat.py`: Torch/Viser viewers for PLY splats. They prove the Gaussian splats load on-device but are independent from the `web/` demo (no Three.js integration).
+- `device_utils.py`: Small helper choosing between MPS/CUDA/CPU devices.
+- `check_ply.py`: Dumps PLY vertex field names.
+
+Supporting files:
+
+- `requirements.txt`: Lists `numpy`, `torch`, `plyfile`, `viser`, `Pillow`, `gsplat`, `typing_extensions`. Notably **missing** `opencv-python` and `trimesh`, which are required by the sampler and validator scripts.
+- `package.json`: Only runtime dependency is `@tensorflow/tfjs-node`. No bundler or dev tooling for the front-end.
+
+### 2.3 Front-End Demo (`web/`)
+
+- `web/index.html`, `web/style.css`, `web/main.js` implement a **single-pane video overlay**. Features:
+  - Loads `assets/videos/Pilot_plant.mp4` and hard-coded detections from `outputs/detections/pilot_plant.json`.
+  - Renders bounding boxes with color-coded class labels, a confidence slider, per-class checkboxes, and per-frame stats.
+  - Uses `DEFAULT_FPS = 30` and rounds `video.currentTime * FPS` to choose detections, so other frame rates (Coffee_place @ 24.33 FPS, etc.) would desync until logic is generalized.
+- There is **no Three.js canvas, 3D pin rendering, or integration with PLY/GLB assets** despite those being part of the Day 1 deliverable in the plan.
+- Static assets for hosting mirror the root folders under `web/assets/` and `web/outputs/`, which keeps the demo self-contained but duplicates several gigabytes of data and risks drifting from the canonical copies in the repo root. No build step enforces synchronization.
+
+### 2.4 Generated Outputs & Evaluation Artifacts (`outputs/`)
+
+- `outputs/frame_manifest.json`: 188 sampled frames from Pilot_plant with metadata showing both 224×224 model frames and 1280×960 annotation frames.
+- `outputs/frames/{model,annotation}/`: Image blobs referenced by the manifest.
+- `outputs/detections/pilot_plant.json`: Contains 188 frame entries with 37,600 total detections (average 200/frame because `--max-dets=200`), heavily skewed toward the “measurement” class (~25k boxes). No tracking IDs, centroids, or geometry metadata—just per-frame, per-class bounding boxes in normalized coordinates.
+- No `outputs/tracks/*`, `outputs/3d_pins/*`, or derived scene manifests exist yet.
+
+---
+
+## 3. Progress Against the Four-Day PLAN
+
+### 3.1 Day-by-Day Deliverables
+
+| Plan Item | Expected Deliverable | Status | Evidence / Notes |
+| --- | --- | --- | --- |
+| **Day 1 – Baseline demo** | - TFJS model wired into a web page<br>- Inference run on Pilot_plant + per-frame JSON<br>- Three.js viewer loading a PLY scene | **Partially complete** | TFJS pipeline runs (`scripts/frame_sampler.py`, `scripts/tfjs_inference.py`) and `web/main.js` shows 2D boxes. No Three.js or synchronized 3D viewer exists; only offline `viewer_viser.py` using Viser (Python) is available. |
+| **Day 2 – Open-vocab + tracking** | - ByteTrack/BoT-SORT integration<br>- GroundingDINO/OWL-ViT + SAM 2 path<br>- Schema for tracks/masks, timeline UI | **Not started** | No tracker dependencies, no open-vocab models, no mask storage. `web/main.js` only toggles per-class visibility; there’s no detector switch or track timeline. |
+| **Day 3 – 3D localization** | - COLMAP/ORB-SLAM2 pipeline<br>- Alignment to PLY via Open3D ICP<br>- 3D pins synchronized with video | **Not started** | No COLMAP scripts/configs, no camera pose outputs, no 3D pin JSON, no reprojection metrics. Python viewers only render point clouds statically. |
+| **Day 4 – Assistant + polish + pitch** | - Threshold calibration, metrics<br>- “Ask Your Plant” UI, insights<br>- Demo video, slides | **Not started** | `scripts/eval_detections.py` could support metrics, but ground truth is missing, thresholds remain defaults, no assistant UI, no storytelling artifacts. |
+
+### 3.2 Workstream Checklist Coverage
+
+**Workstream A (2D/Vision)**  
+
+| Checklist Item | Status | Notes |
+| --- | --- | --- |
+| Load TFJS AutoML model & run fast inference loop | ✅ Completed. `scripts/tfjs_inference.py` + `tfjs_inference_node.js` wrap `@tensorflow/tfjs-node` for batch inference. |
+| Draw boxes, sliders, export detections JSON | ✅ Completed. `web/main.js` renders boxes with a confidence slider; JSON stored in `outputs/detections/pilot_plant.json`. |
+| Integrate tracker (ByteTrack/BoT-SORT) | ⛔ Not started. No tracking code or dependencies. |
+| Open-vocab detector (GroundingDINO / OWL-ViT) | ⛔ Not started. No alternative detector path or prompts. |
+| SAM 2 masks / centroid export | ⛔ Not started. |
+| Temporal smoothing, outlier suppression | ⛔ Not started. Detections saturate at `max_dets` with no filtering. |
+| Metrics (mAP, recall) + calibration | ⚠️ Tooling exists (`scripts/eval_detections.py`) but no annotations or reports prove it was run. Thresholds remain generic (`config/thresholds.json`). |
+| Provide per-track centroid sequences | ⛔ Not started. |
+
+**Workstream B (3D/SLAM + UI)**  
+
+| Checklist Item | Status | Notes |
+| --- | --- | --- |
+| Three.js viewer + controls | ⛔ Not started in the web app. Only Python/Viser scripts exist. |
+| Video pane with overlay + timeline/class filters | ⚠️ Partial. Video overlay exists, but there is no scrubber tied to detection metadata beyond the native `<video>` controls, and no multi-detector toggles. |
+| Track/camera/pin schemas (`outputs/tracks/*.json`, etc.) | ⛔ Not started. |
+| COLMAP/ORB-SLAM2 camera poses | ⛔ Not started. No scripts, configs, or outputs. |
+| Alignment to PLY / ICP metrics | ⛔ Not started. |
+| Triangulation & uncertainty estimates | ⛔ Not started. |
+| 3D pins rendered in demo | ⛔ Not started. |
+| Insights view, heatmaps, “Ask Your Plant” | ⛔ Not started. |
+| Inventory export (CSV/JSON) | ⛔ Not started. |
+
+Overall, the repository is still in **early Day 1** of the plan: basic frame sampling, TFJS inference, and a single-pane 2D overlay are working, but every tracking, 3D, assistant, and reporting milestone remains untouched.
+
+---
+
+## 4. Alignment with Challenge Brief Requirements
+
+| Requirement (from PDFs) | Expectation | Current State | Assessment |
+| --- | --- | --- | --- |
+| Detect field devices quickly and accurately | Need a model that recognizes valves, measurements, motors, positioners; target mAP ≥ 0.6 and recall ≥ 0.7 per PLAN | Baseline TFJS AutoML model runs offline via Node. Detections saturate at 200 per frame with confidences ~0.5 and no quality metrics or annotations to quantify accuracy. | ⚠️ Accuracy and precision are **unknown**; high false positives likely. Speed claims (≥ 10 FPS CPU) are unmeasured. |
+| Use provided 3D Gaussian splats / Digital Twin | Integrate PLY scenes, align detections, render 3D pins | Only standalone `viewer_viser.py` loads the PLY. No Three.js renderer, no alignment, no 3D visualization in the demo. | ⛔ Not addressed in shipping demo. |
+| Demonstrate AI-assisted scene building / dynamic content (Since AI slides) | Show asynchronous AI agents inserting device twins, linking metadata, securing on-prem runtime | There is no assistant UX, no metadata binding, no security story, and no automation around digital twin instantiation beyond loading static point clouds. | ⛔ Missing. |
+| Dataset utilization | Use videos, photos, and possible small photo set for training/testing | Only `assets/videos/Pilot_plant.mp4` is processed. Other videos and stills remain unused, and no data augmentation pipeline or open-vocab models target the 200-photo dataset. | ⚠️ Underutilized assets. |
+| Deliverables | Demo video + presentation + code repo | Code repo exists, but no demo recording, slide deck, or README storytelling beyond a terse “some quick commands” list. | ⚠️ Partial deliverable coverage. |
+| Business impact narrative | Show remote support/training tie-in, “Ask Your Plant” assistant | No narrative artifacts, filters, or analytics dashboards exist in the UI. | ⛔ Not addressed. |
+| Robustness/performance | On-device inference, asynchronous operations, security | No benchmarking, no offline/tracking pipeline, no mention of deployment targets beyond generic scripts. | ⚠️ Unknown. |
+
+---
+
+## 5. Strengths & Completed Work
+
+1. **Data ingestion + manifest tooling**: `scripts/frame_sampler.py` provides a flexible, reproducible path from raw videos to normalized frames plus annotation-grade images, complete with scaling metadata and documented via `docs/frame_sampling.md`.
+2. **Baseline TFJS inference path**: End-to-end sampling → TFJS inference is automated, with reproducible CLI entry points and Node integration. Assets (`web/models/tfjs_baseline/...`) are bundled for offline use, and per-class thresholds live in `config/thresholds.json`.
+3. **Interactive 2D overlay**: `web/main.js` delivers a solid baseline for UI polish (styled controls, per-class filters, responsive canvas, and dynamic stats) that can be extended.
+4. **Asset hygiene**: `scripts/validate_assets.py` and the generated `assets_manifest.json` keep track of PLY, GLB, and MP4 metadata, setting the stage for reproducible documentation.
+5. **3D file sanity checks**: While not integrated with the web UI, the Viser-based viewers prove the Gaussian splats load on-device and can act as scaffolding for future Three.js work.
+
+These pieces establish the ingest-and-visualize loop for 2D detection, fulfilling roughly half of Day 1.
+
+---
+
+## 6. Key Gaps, Issues, and Risks
+
+1. **No evidence of detector quality or calibration**: With 37,600 detections across 188 frames (≈200/frame), the TFJS baseline is likely firing on every anchor. Without labeled ground truth or the evaluation script in use, it is impossible to prove the hackathon success metrics (mAP ≥ 0.6, recall ≥ 0.7). This undermines both the challenge criteria and the PLAN’s Day 4 objectives.
+2. **3D alignment and visualization absent**: The central hackathon challenge (tying detections to the Gaussian splat, generating 3D pins, answering “find all hand valves near tank”) remains entirely unimplemented. There is no COLMAP/SLAM pipeline, no camera pose files, and no front-end 3D renderer.
+3. **Open-vocab + tracking deliverables missing**: Without ByteTrack/BoT-SORT or an OWL-ViT/GroundingDINO/SAM path, the solution cannot generalize beyond the narrow AutoML model classes, conflicting with the “Ask Your Plant” assistant story and the plan’s Workstream A goals.
+4. **Asset duplication and drift risk**: Entire `assets/` and `outputs/` trees are duplicated under `web/` to satisfy static hosting, but no script keeps them synchronized. Manual copying risks stale detections in the demo or double-sized repo check-ins.
+5. **Dependency drift**: `requirements.txt` omits `opencv-python` and `trimesh`, both required by committed scripts, so a `pip install -r requirements.txt` run will fail until manual intervention occurs.
+6. **Missing annotations and evaluation data**: `annotations/heldout_frames/` contains only PNGs, no JSON labels. Without labeled samples, there’s no benchmark to tune thresholds or feed into the evaluation script, leaving success metrics speculative.
+7. **UI limitations**: The current web overlay assumes 30 FPS, has no multi-detector toggle, lacks timeline scrubbing tied to detection metadata, and omits any 3D/assistant UI promised in Day 2–4. This weakens the eventual hackathon demo narrative.
+8. **Storytelling artifacts absent**: No README walkthrough, slide deck, or recorded demo speaks to the business impact or remote-support tie-in demanded by the challenge.
+
+Collectively, these gaps mean the project is far from satisfying the challenge brief; additional days of work are needed across detection, tracking, 3D alignment, and UX.
+
+---
+
+## 7. Recommendations & Next Steps
+
+1. **Stabilize the baseline detector output**  
+   - Annotate a small held-out frame set (using `annotations/heldout_frames/`) via LabelMe, convert with `scripts/convert_labelme_annotations.py`, and run `scripts/eval_detections.py` to quantify precision/recall per class.  
+   - Tune `config/thresholds.json` (or add per-class defaults to the TFJS pipeline) to curb the 200 detections/frame flood before layering trackers on top.
+
+2. **Deliver the Day 1 3D viewer**  
+   - Port the PLY rendering logic from `scripts/viewer_viser.py` into a Three.js component within `web/`, loading meshes from `web/assets/pointclouds/`.  
+   - Co-locate the video overlay and 3D panel, even if they are not yet synchronized, to meet the first deliverable and unblock later pin rendering.
+
+3. **Build the tracking + open-vocab pathway (Day 2 scope)**  
+   - Choose a tracker (ByteTrack or BoT-SORT) in Python, associate detections across frames, and emit `outputs/tracks/pilot_plant_tracks.json` using the schema defined in the plan.  
+   - Experiment with an OWL-ViT or GroundingDINO inference notebook to showcase zero-shot classes missing from the AutoML model; export the results alongside TFJS detections and add detector toggles in `web/main.js`.
+
+4. **Invest in 3D localization tooling (Day 3 scope)**  
+   - Stand up COLMAP or ORB-SLAM2 to recover camera intrinsics/extrinsics for `Pilot_plant.mp4`.  
+   - Implement the alignment + ICP pipeline (Open3D or custom) to register SLAM output with `assets/pointclouds/pilot_plant_devices.ply`.  
+   - Triangulate tracked centroids to produce `outputs/3d_pins/*.json`, record residual metrics, and feed them into the forthcoming Three.js scene.
+
+5. **Extend the web app toward the “Ask Your Plant” experience (Day 4 scope)**  
+   - Add an insights panel (counts per class, most confident detections) and search filters (e.g., highlight all hand valves).  
+   - Prototype a text command input (even if stubbed) to frame the assistant story, and integrate track-based metadata (e.g., 3D coordinates from the upcoming pipeline).  
+   - Document the demo steps, record a screen capture once the 3D sync exists, and start a slide deck referencing the metrics you compute.
+
+6. **Housekeeping**  
+   - Add missing Python dependencies (`opencv-python`, `trimesh`) to `requirements.txt`.  
+   - Automate copying or symlinking `assets/` and `outputs/` into `web/` (or adjust the static server root) to avoid duplication drift.  
+   - Expand `readme.md` with full setup instructions (virtualenv, frame sampling, inference, web preview) so reviewers can follow the workflow without guesswork.
+
+Addressing the items above will move the project from “baseline detector” toward the complete hackathon vision described in the PDFs and PLAN.
+
+---
+
+## 8. Additional Notes
+
+- The decision log in the plan (dated 2025‑10‑14) already commits to TFJS + GroundingDINO and COLMAP + Open3D ICP; aligning the implementation with those recorded decisions will keep the narrative consistent.
+- Consider leveraging the small `assets/images/Devices.png` dataset for prompt engineering or fine-tuning once the open-vocab path exists, as highlighted in the Since AI challenge slides.
+- Security, asynchronous agent execution, and deployment constraints—explicitly mentioned in the Since AI brief—remain unanswered. Plan to reserve time to address these concerns in the pitch (e.g., “we run TFJS/OWL-ViT locally on M2 hardware, no cloud egress”).
+
+---
+
+_End of report._
