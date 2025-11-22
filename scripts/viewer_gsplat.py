@@ -38,9 +38,6 @@ img_height = 600
 server = viser.ViserServer()
 
 
-# ---------------------------------------------------------
-# CPU-only fallback rasterizer (MAC-SAFE)
-# ---------------------------------------------------------
 def simple_cpu_render(means, colors, camera_position, W, H):
     """Very simple CPU renderer: nearest splat projection."""
     img = np.zeros((H, W, 3), dtype=np.float32)
