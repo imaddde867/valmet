@@ -1,7 +1,7 @@
 {
-    "_default": 0.15,
-    "handvalve": 0.12,
-    "motor": 0.2,
-    "measurement": 0.18,
-    "positioner": 0.18
+    "_default": 0.5,
+    "handvalve": 0.5,
+    "motor": 0.52,
+    "measurement": 0.5,
+    "positioner": 0.5
 }
