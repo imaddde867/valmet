@@ -1,0 +1,27 @@
+{
+  "name": "valmet",
+  "version": "1.0.0",
+  "description": "install these: viser numpy plyfile",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imaddde867/valmet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/imaddde867/valmet/issues"
+  },
+  "homepage": "https://github.com/imaddde867/valmet#readme",
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^4.10.0"
+  }
+}
