@@ -4,11 +4,11 @@ import viser
 from PIL import Image
 import torch
 
-from device_utils import pick_device
+from device_utils import VALMET_DEVICE_ENV, pick_device
 
 
 device = pick_device()
-print(f"Using device: {device}")
+print(f"Using device: {device} (override via {VALMET_DEVICE_ENV})")
 if device.type == "mps":
     print("Metal / MPS acceleration enabled.")
 

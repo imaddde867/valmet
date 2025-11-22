@@ -4,7 +4,7 @@ import torch
 import viser
 from plyfile import PlyData
 
-from device_utils import pick_device
+from device_utils import VALMET_DEVICE_ENV, pick_device
 
 # Read the PLY file
 plydata = PlyData.read("assets/pointclouds/pilot_plant_devices.ply")
@@ -12,7 +12,7 @@ vertex = plydata['vertex']
 
 # Select compute device (Metal / CUDA / CPU)
 device = pick_device()
-print(f"Preparing point cloud on device: {device}")
+print(f"Preparing point cloud on device: {device} (override via {VALMET_DEVICE_ENV})")
 
 # Extract positions
 positions_np = np.vstack([vertex['x'], vertex['y'], vertex['z']]).T
