@@ -4,13 +4,7 @@ import torch
 import viser
 from plyfile import PlyData
 
-
-def pick_device() -> torch.device:
-    if hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
-        return torch.device("mps")
-    if torch.cuda.is_available():
-        return torch.device("cuda")
-    return torch.device("cpu")
+from device_utils import pick_device
 
 # Read the PLY file
 plydata = PlyData.read("assets/pointclouds/pilot_plant_devices.ply")
