@@ -1,21 +1,38 @@
-import viser
+import time
 import numpy as np
+import torch
+import viser
 from plyfile import PlyData
+
+
+def pick_device() -> torch.device:
+    if hasattr(torch.backends, "mps") and torch.backends.mps.is_available():
+        return torch.device("mps")
+    if torch.cuda.is_available():
+        return torch.device("cuda")
+    return torch.device("cpu")
 
 # Read the PLY file
 plydata = PlyData.read("assets/pointclouds/pilot_plant_devices.ply")
 vertex = plydata['vertex']
 
-# Extract positions
-positions = np.vstack([vertex['x'], vertex['y'], vertex['z']]).T
+# Select compute device (Metal / CUDA / CPU)
+device = pick_device()
+print(f"Preparing point cloud on device: {device}")
 
-# Extract colors from spherical harmonics DC component
-# f_dc_0, f_dc_1, f_dc_2 are the base colors in SH space
-# Convert from SH to RGB (SH_C0 = 0.28209479177387814)
+# Extract positions
+positions_np = np.vstack([vertex['x'], vertex['y'], vertex['z']]).T
+
+# Extract colors from spherical harmonics DC component and convert on device
 SH_C0 = 0.28209479177387814
-colors_sh = np.vstack([vertex['f_dc_0'], vertex['f_dc_1'], vertex['f_dc_2']]).T
-colors_rgb = (colors_sh * SH_C0 + 0.5) * 255
-colors_rgb = np.clip(colors_rgb, 0, 255).astype(np.uint8)
+colors_sh_np = np.vstack([vertex['f_dc_0'], vertex['f_dc_1'], vertex['f_dc_2']]).T
+
+positions = torch.from_numpy(positions_np).float().to(device)
+colors_sh = torch.from_numpy(colors_sh_np).float().to(device)
+colors_rgb = torch.clamp(colors_sh * SH_C0 + 0.5, 0.0, 1.0)
+
+positions = positions.cpu().numpy()
+colors_rgb = (colors_rgb * 255).byte().cpu().numpy()
 
 # Create viser server
 server = viser.ViserServer()
@@ -28,4 +45,4 @@ server.scene.add_point_cloud(
 
 print("Open http://localhost:8080 in your browser")
 while True:
-    pass
+    time.sleep(1)
