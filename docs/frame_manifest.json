@@ -1,0 +1,4326 @@
+[
+  {
+    "frame_index": 0,
+    "timestamp_sec": 0.0,
+    "filename": "frame_000000.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000000.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 12,
+    "timestamp_sec": 0.4,
+    "filename": "frame_000012.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000012.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 24,
+    "timestamp_sec": 0.8,
+    "filename": "frame_000024.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000024.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 36,
+    "timestamp_sec": 1.2,
+    "filename": "frame_000036.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000036.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 48,
+    "timestamp_sec": 1.6,
+    "filename": "frame_000048.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000048.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 60,
+    "timestamp_sec": 2.0,
+    "filename": "frame_000060.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000060.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 72,
+    "timestamp_sec": 2.4,
+    "filename": "frame_000072.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000072.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 84,
+    "timestamp_sec": 2.8,
+    "filename": "frame_000084.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000084.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 96,
+    "timestamp_sec": 3.2,
+    "filename": "frame_000096.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000096.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 108,
+    "timestamp_sec": 3.6,
+    "filename": "frame_000108.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000108.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 120,
+    "timestamp_sec": 4.0,
+    "filename": "frame_000120.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000120.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 132,
+    "timestamp_sec": 4.4,
+    "filename": "frame_000132.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000132.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 144,
+    "timestamp_sec": 4.8,
+    "filename": "frame_000144.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000144.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 156,
+    "timestamp_sec": 5.2,
+    "filename": "frame_000156.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000156.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 168,
+    "timestamp_sec": 5.6,
+    "filename": "frame_000168.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000168.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 180,
+    "timestamp_sec": 6.0,
+    "filename": "frame_000180.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000180.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 192,
+    "timestamp_sec": 6.4,
+    "filename": "frame_000192.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000192.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 204,
+    "timestamp_sec": 6.8,
+    "filename": "frame_000204.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000204.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 216,
+    "timestamp_sec": 7.2,
+    "filename": "frame_000216.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000216.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 228,
+    "timestamp_sec": 7.6,
+    "filename": "frame_000228.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000228.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 240,
+    "timestamp_sec": 8.0,
+    "filename": "frame_000240.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000240.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 252,
+    "timestamp_sec": 8.4,
+    "filename": "frame_000252.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000252.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 264,
+    "timestamp_sec": 8.8,
+    "filename": "frame_000264.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000264.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 276,
+    "timestamp_sec": 9.2,
+    "filename": "frame_000276.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000276.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 288,
+    "timestamp_sec": 9.6,
+    "filename": "frame_000288.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000288.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 300,
+    "timestamp_sec": 10.0,
+    "filename": "frame_000300.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000300.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 312,
+    "timestamp_sec": 10.4,
+    "filename": "frame_000312.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000312.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 324,
+    "timestamp_sec": 10.8,
+    "filename": "frame_000324.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000324.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 336,
+    "timestamp_sec": 11.2,
+    "filename": "frame_000336.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000336.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 348,
+    "timestamp_sec": 11.6,
+    "filename": "frame_000348.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000348.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 360,
+    "timestamp_sec": 12.0,
+    "filename": "frame_000360.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000360.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 372,
+    "timestamp_sec": 12.4,
+    "filename": "frame_000372.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000372.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 384,
+    "timestamp_sec": 12.8,
+    "filename": "frame_000384.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000384.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 396,
+    "timestamp_sec": 13.2,
+    "filename": "frame_000396.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000396.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 408,
+    "timestamp_sec": 13.6,
+    "filename": "frame_000408.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000408.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 420,
+    "timestamp_sec": 14.0,
+    "filename": "frame_000420.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000420.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 432,
+    "timestamp_sec": 14.4,
+    "filename": "frame_000432.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000432.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 444,
+    "timestamp_sec": 14.8,
+    "filename": "frame_000444.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000444.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 456,
+    "timestamp_sec": 15.2,
+    "filename": "frame_000456.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000456.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 468,
+    "timestamp_sec": 15.6,
+    "filename": "frame_000468.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000468.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 480,
+    "timestamp_sec": 16.0,
+    "filename": "frame_000480.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000480.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 492,
+    "timestamp_sec": 16.4,
+    "filename": "frame_000492.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000492.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 504,
+    "timestamp_sec": 16.8,
+    "filename": "frame_000504.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000504.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 516,
+    "timestamp_sec": 17.2,
+    "filename": "frame_000516.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000516.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 528,
+    "timestamp_sec": 17.6,
+    "filename": "frame_000528.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000528.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 540,
+    "timestamp_sec": 18.0,
+    "filename": "frame_000540.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000540.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 552,
+    "timestamp_sec": 18.4,
+    "filename": "frame_000552.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000552.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 564,
+    "timestamp_sec": 18.8,
+    "filename": "frame_000564.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000564.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 576,
+    "timestamp_sec": 19.2,
+    "filename": "frame_000576.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000576.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 588,
+    "timestamp_sec": 19.6,
+    "filename": "frame_000588.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000588.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 600,
+    "timestamp_sec": 20.0,
+    "filename": "frame_000600.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000600.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 612,
+    "timestamp_sec": 20.4,
+    "filename": "frame_000612.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000612.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 624,
+    "timestamp_sec": 20.8,
+    "filename": "frame_000624.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000624.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 636,
+    "timestamp_sec": 21.2,
+    "filename": "frame_000636.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000636.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 648,
+    "timestamp_sec": 21.6,
+    "filename": "frame_000648.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000648.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 660,
+    "timestamp_sec": 22.0,
+    "filename": "frame_000660.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000660.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 672,
+    "timestamp_sec": 22.4,
+    "filename": "frame_000672.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000672.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 684,
+    "timestamp_sec": 22.8,
+    "filename": "frame_000684.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000684.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 696,
+    "timestamp_sec": 23.2,
+    "filename": "frame_000696.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000696.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 708,
+    "timestamp_sec": 23.6,
+    "filename": "frame_000708.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000708.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 720,
+    "timestamp_sec": 24.0,
+    "filename": "frame_000720.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000720.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 732,
+    "timestamp_sec": 24.4,
+    "filename": "frame_000732.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000732.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 744,
+    "timestamp_sec": 24.8,
+    "filename": "frame_000744.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000744.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 756,
+    "timestamp_sec": 25.2,
+    "filename": "frame_000756.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000756.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 768,
+    "timestamp_sec": 25.6,
+    "filename": "frame_000768.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000768.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 780,
+    "timestamp_sec": 26.0,
+    "filename": "frame_000780.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000780.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 792,
+    "timestamp_sec": 26.4,
+    "filename": "frame_000792.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000792.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 804,
+    "timestamp_sec": 26.8,
+    "filename": "frame_000804.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000804.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 816,
+    "timestamp_sec": 27.2,
+    "filename": "frame_000816.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000816.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 828,
+    "timestamp_sec": 27.6,
+    "filename": "frame_000828.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000828.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 840,
+    "timestamp_sec": 28.0,
+    "filename": "frame_000840.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000840.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 852,
+    "timestamp_sec": 28.4,
+    "filename": "frame_000852.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000852.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 864,
+    "timestamp_sec": 28.8,
+    "filename": "frame_000864.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000864.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 876,
+    "timestamp_sec": 29.2,
+    "filename": "frame_000876.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000876.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 888,
+    "timestamp_sec": 29.6,
+    "filename": "frame_000888.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000888.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 900,
+    "timestamp_sec": 30.0,
+    "filename": "frame_000900.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000900.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 912,
+    "timestamp_sec": 30.4,
+    "filename": "frame_000912.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000912.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 924,
+    "timestamp_sec": 30.8,
+    "filename": "frame_000924.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000924.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 936,
+    "timestamp_sec": 31.2,
+    "filename": "frame_000936.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000936.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 948,
+    "timestamp_sec": 31.6,
+    "filename": "frame_000948.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000948.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 960,
+    "timestamp_sec": 32.0,
+    "filename": "frame_000960.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000960.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 972,
+    "timestamp_sec": 32.4,
+    "filename": "frame_000972.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000972.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 984,
+    "timestamp_sec": 32.8,
+    "filename": "frame_000984.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000984.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 996,
+    "timestamp_sec": 33.2,
+    "filename": "frame_000996.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_000996.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1008,
+    "timestamp_sec": 33.6,
+    "filename": "frame_001008.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001008.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1020,
+    "timestamp_sec": 34.0,
+    "filename": "frame_001020.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001020.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1032,
+    "timestamp_sec": 34.4,
+    "filename": "frame_001032.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001032.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1044,
+    "timestamp_sec": 34.8,
+    "filename": "frame_001044.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001044.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1056,
+    "timestamp_sec": 35.2,
+    "filename": "frame_001056.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001056.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1068,
+    "timestamp_sec": 35.6,
+    "filename": "frame_001068.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001068.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1080,
+    "timestamp_sec": 36.0,
+    "filename": "frame_001080.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001080.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1092,
+    "timestamp_sec": 36.4,
+    "filename": "frame_001092.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001092.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1104,
+    "timestamp_sec": 36.8,
+    "filename": "frame_001104.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001104.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1116,
+    "timestamp_sec": 37.2,
+    "filename": "frame_001116.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001116.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1128,
+    "timestamp_sec": 37.6,
+    "filename": "frame_001128.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001128.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1140,
+    "timestamp_sec": 38.0,
+    "filename": "frame_001140.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001140.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1152,
+    "timestamp_sec": 38.4,
+    "filename": "frame_001152.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001152.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1164,
+    "timestamp_sec": 38.8,
+    "filename": "frame_001164.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001164.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1176,
+    "timestamp_sec": 39.2,
+    "filename": "frame_001176.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001176.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1188,
+    "timestamp_sec": 39.6,
+    "filename": "frame_001188.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001188.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1200,
+    "timestamp_sec": 40.0,
+    "filename": "frame_001200.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001200.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1212,
+    "timestamp_sec": 40.4,
+    "filename": "frame_001212.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001212.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1224,
+    "timestamp_sec": 40.8,
+    "filename": "frame_001224.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001224.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1236,
+    "timestamp_sec": 41.2,
+    "filename": "frame_001236.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001236.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1248,
+    "timestamp_sec": 41.6,
+    "filename": "frame_001248.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001248.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1260,
+    "timestamp_sec": 42.0,
+    "filename": "frame_001260.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001260.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1272,
+    "timestamp_sec": 42.4,
+    "filename": "frame_001272.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001272.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1284,
+    "timestamp_sec": 42.8,
+    "filename": "frame_001284.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001284.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1296,
+    "timestamp_sec": 43.2,
+    "filename": "frame_001296.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001296.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1308,
+    "timestamp_sec": 43.6,
+    "filename": "frame_001308.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001308.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1320,
+    "timestamp_sec": 44.0,
+    "filename": "frame_001320.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001320.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1332,
+    "timestamp_sec": 44.4,
+    "filename": "frame_001332.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001332.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1344,
+    "timestamp_sec": 44.8,
+    "filename": "frame_001344.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001344.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1356,
+    "timestamp_sec": 45.2,
+    "filename": "frame_001356.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001356.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1368,
+    "timestamp_sec": 45.6,
+    "filename": "frame_001368.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001368.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1380,
+    "timestamp_sec": 46.0,
+    "filename": "frame_001380.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001380.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1392,
+    "timestamp_sec": 46.4,
+    "filename": "frame_001392.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001392.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1404,
+    "timestamp_sec": 46.8,
+    "filename": "frame_001404.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001404.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1416,
+    "timestamp_sec": 47.2,
+    "filename": "frame_001416.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001416.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1428,
+    "timestamp_sec": 47.6,
+    "filename": "frame_001428.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001428.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1440,
+    "timestamp_sec": 48.0,
+    "filename": "frame_001440.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001440.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1452,
+    "timestamp_sec": 48.4,
+    "filename": "frame_001452.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001452.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1464,
+    "timestamp_sec": 48.8,
+    "filename": "frame_001464.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001464.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1476,
+    "timestamp_sec": 49.2,
+    "filename": "frame_001476.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001476.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1488,
+    "timestamp_sec": 49.6,
+    "filename": "frame_001488.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001488.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1500,
+    "timestamp_sec": 50.0,
+    "filename": "frame_001500.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001500.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1512,
+    "timestamp_sec": 50.4,
+    "filename": "frame_001512.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001512.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1524,
+    "timestamp_sec": 50.8,
+    "filename": "frame_001524.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001524.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1536,
+    "timestamp_sec": 51.2,
+    "filename": "frame_001536.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001536.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1548,
+    "timestamp_sec": 51.6,
+    "filename": "frame_001548.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001548.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1560,
+    "timestamp_sec": 52.0,
+    "filename": "frame_001560.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001560.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1572,
+    "timestamp_sec": 52.4,
+    "filename": "frame_001572.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001572.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1584,
+    "timestamp_sec": 52.8,
+    "filename": "frame_001584.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001584.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1596,
+    "timestamp_sec": 53.2,
+    "filename": "frame_001596.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001596.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1608,
+    "timestamp_sec": 53.6,
+    "filename": "frame_001608.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001608.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1620,
+    "timestamp_sec": 54.0,
+    "filename": "frame_001620.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001620.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1632,
+    "timestamp_sec": 54.4,
+    "filename": "frame_001632.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001632.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1644,
+    "timestamp_sec": 54.8,
+    "filename": "frame_001644.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001644.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1656,
+    "timestamp_sec": 55.2,
+    "filename": "frame_001656.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001656.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1668,
+    "timestamp_sec": 55.6,
+    "filename": "frame_001668.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001668.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1680,
+    "timestamp_sec": 56.0,
+    "filename": "frame_001680.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001680.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1692,
+    "timestamp_sec": 56.4,
+    "filename": "frame_001692.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001692.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1704,
+    "timestamp_sec": 56.8,
+    "filename": "frame_001704.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001704.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1716,
+    "timestamp_sec": 57.2,
+    "filename": "frame_001716.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001716.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1728,
+    "timestamp_sec": 57.6,
+    "filename": "frame_001728.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001728.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1740,
+    "timestamp_sec": 58.0,
+    "filename": "frame_001740.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001740.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1752,
+    "timestamp_sec": 58.4,
+    "filename": "frame_001752.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001752.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1764,
+    "timestamp_sec": 58.8,
+    "filename": "frame_001764.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001764.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1776,
+    "timestamp_sec": 59.2,
+    "filename": "frame_001776.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001776.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1788,
+    "timestamp_sec": 59.6,
+    "filename": "frame_001788.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001788.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1800,
+    "timestamp_sec": 60.0,
+    "filename": "frame_001800.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001800.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1812,
+    "timestamp_sec": 60.4,
+    "filename": "frame_001812.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001812.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1824,
+    "timestamp_sec": 60.8,
+    "filename": "frame_001824.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001824.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1836,
+    "timestamp_sec": 61.2,
+    "filename": "frame_001836.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001836.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1848,
+    "timestamp_sec": 61.6,
+    "filename": "frame_001848.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001848.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1860,
+    "timestamp_sec": 62.0,
+    "filename": "frame_001860.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001860.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1872,
+    "timestamp_sec": 62.4,
+    "filename": "frame_001872.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001872.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1884,
+    "timestamp_sec": 62.8,
+    "filename": "frame_001884.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001884.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1896,
+    "timestamp_sec": 63.2,
+    "filename": "frame_001896.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001896.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1908,
+    "timestamp_sec": 63.6,
+    "filename": "frame_001908.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001908.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1920,
+    "timestamp_sec": 64.0,
+    "filename": "frame_001920.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001920.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1932,
+    "timestamp_sec": 64.4,
+    "filename": "frame_001932.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001932.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1944,
+    "timestamp_sec": 64.8,
+    "filename": "frame_001944.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001944.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1956,
+    "timestamp_sec": 65.2,
+    "filename": "frame_001956.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001956.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1968,
+    "timestamp_sec": 65.6,
+    "filename": "frame_001968.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001968.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1980,
+    "timestamp_sec": 66.0,
+    "filename": "frame_001980.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001980.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 1992,
+    "timestamp_sec": 66.4,
+    "filename": "frame_001992.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_001992.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 2004,
+    "timestamp_sec": 66.8,
+    "filename": "frame_002004.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_002004.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 2016,
+    "timestamp_sec": 67.2,
+    "filename": "frame_002016.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_002016.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 2028,
+    "timestamp_sec": 67.6,
+    "filename": "frame_002028.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_002028.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 2040,
+    "timestamp_sec": 68.0,
+    "filename": "frame_002040.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_002040.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 2052,
+    "timestamp_sec": 68.4,
+    "filename": "frame_002052.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_002052.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 2064,
+    "timestamp_sec": 68.8,
+    "filename": "frame_002064.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_002064.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 2076,
+    "timestamp_sec": 69.2,
+    "filename": "frame_002076.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_002076.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 2088,
+    "timestamp_sec": 69.6,
+    "filename": "frame_002088.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_002088.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 2100,
+    "timestamp_sec": 70.0,
+    "filename": "frame_002100.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_002100.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 2112,
+    "timestamp_sec": 70.4,
+    "filename": "frame_002112.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_002112.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 2124,
+    "timestamp_sec": 70.8,
+    "filename": "frame_002124.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_002124.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 2136,
+    "timestamp_sec": 71.2,
+    "filename": "frame_002136.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_002136.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 2148,
+    "timestamp_sec": 71.6,
+    "filename": "frame_002148.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_002148.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 2160,
+    "timestamp_sec": 72.0,
+    "filename": "frame_002160.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_002160.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 2172,
+    "timestamp_sec": 72.4,
+    "filename": "frame_002172.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_002172.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 2184,
+    "timestamp_sec": 72.8,
+    "filename": "frame_002184.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_002184.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 2196,
+    "timestamp_sec": 73.2,
+    "filename": "frame_002196.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_002196.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 2208,
+    "timestamp_sec": 73.6,
+    "filename": "frame_002208.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_002208.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 2220,
+    "timestamp_sec": 74.0,
+    "filename": "frame_002220.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_002220.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 2232,
+    "timestamp_sec": 74.4,
+    "filename": "frame_002232.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_002232.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  },
+  {
+    "frame_index": 2244,
+    "timestamp_sec": 74.8,
+    "filename": "frame_002244.jpg",
+    "original_size": {
+      "width": 1280,
+      "height": 960
+    },
+    "variants": {
+      "model": {
+        "filename": "frame_002244.jpg",
+        "frames_dir": "outputs/frames/highres",
+        "width": 1280,
+        "height": 960,
+        "scale": {
+          "x": 1.0,
+          "y": 1.0
+        },
+        "megapixels": 1.229,
+        "keep_aspect": true
+      }
+    }
+  }
+]

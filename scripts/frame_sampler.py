@@ -46,6 +46,7 @@ def resize_for_model(
     target_width, target_height = target_size
     if keep_aspect:
         scale = min(target_width / original_width, target_height / original_height)
+        scale = min(scale, 1.0)
         new_width = max(1, int(round(original_width * scale)))
         new_height = max(1, int(round(original_height * scale)))
     else:
@@ -105,7 +106,7 @@ def save_image(
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Sample frames from a video for downstream TFJS inference."
+        description="Sample high-quality frames from a video for downstream detection + labeling."
     )
     parser.add_argument(
         "--input-video",
@@ -118,13 +119,21 @@ def parse_args() -> argparse.Namespace:
         type=positive_int,
         nargs=2,
         metavar=("WIDTH", "HEIGHT"),
-        default=(224, 224),
-        help="Resize width and height expected by the TFJS model (default: 224 224).",
+        default=(3840, 2160),
+        help="Maximum width/height for sampled frames (default: 3840 2160 for 4K ceiling).",
     )
     parser.add_argument(
         "--keep-aspect",
+        dest="keep_aspect",
         action="store_true",
-        help="Preserve the original aspect ratio when resizing model frames.",
+        default=True,
+        help="Preserve the original aspect ratio (default: enabled).",
+    )
+    parser.add_argument(
+        "--no-keep-aspect",
+        dest="keep_aspect",
+        action="store_false",
+        help="Disable aspect preservation.",
     )
     parser.add_argument(
         "--interpolation",
@@ -159,8 +168,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--frames-dir",
         type=Path,
-        default=Path("outputs/frames/model"),
-        help="Directory where sampled frames will be stored.",
+        default=Path("outputs/frames/highres"),
+        help="Directory where sampled frames will be stored (default: outputs/frames/highres).",
     )
     parser.add_argument(
         "--manifest",

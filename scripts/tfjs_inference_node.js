@@ -14,13 +14,15 @@ function parseArgs(argv) {
   const args = {
     model: 'web/models/tfjs_baseline/tensorflow_automl_model/model-197536060022980608_tf-js_2023-05-04T05_50_49.038047Z_model.json',
     manifest: 'outputs/frame_manifest.json',
-    framesDir: 'outputs/frames/model',
+    framesDir: 'outputs/frames/highres',
     output: 'outputs/detections/pilot_plant.json',
     labels: 'web/models/tfjs_baseline/tensorflow_automl_model/model-197536060022980608_tf-js_2023-05-04T05_50_49.038047Z_dict.txt',
     videoName: 'Pilot_plant.mp4',
     thresholds: null,
     maxDets: 200,
     iouThreshold: 0.5,
+    inputWidth: 224,
+    inputHeight: 224,
   };
 
   for (let i = 0; i < argv.length; i++) {
@@ -62,6 +64,14 @@ function parseArgs(argv) {
         break;
       case '--iou-threshold':
         args.iouThreshold = Number(value);
+        i++;
+        break;
+      case '--input-width':
+        args.inputWidth = Number(value);
+        i++;
+        break;
+      case '--input-height':
+        args.inputHeight = Number(value);
         i++;
         break;
       default:
@@ -171,14 +181,27 @@ async function main() {
   console.log(`Loaded model from ${modelPath}`);
 
   const results = [];
+  const normalizeScalar = tf.scalar(255);
   for (const entry of manifest) {
     const framePath = path.join(framesDir, entry.filename);
     const imgBuffer = await fs.readFile(framePath);
-    let imageTensor = tf.node.decodeImage(imgBuffer, 3);
-    let inputTensor = imageTensor
-      .toFloat()
-      .div(tf.scalar(255))
-      .expandDims(0);
+    let decoded = tf.node.decodeImage(imgBuffer, 3).toFloat();
+    if (
+      decoded.shape[0] !== args.inputHeight ||
+      decoded.shape[1] !== args.inputWidth
+    ) {
+      const resized = tf.image.resizeBilinear(
+        decoded,
+        [args.inputHeight, args.inputWidth],
+        true
+      );
+      decoded.dispose();
+      decoded = resized;
+    }
+    const normalized = decoded.div(normalizeScalar);
+    const inputTensor = normalized.expandDims(0);
+    normalized.dispose();
+    decoded.dispose();
 
     const frameStart = process.hrtime.bigint();
     const pred = await model.executeAsync(inputTensor);
@@ -231,7 +254,6 @@ async function main() {
         pred.dispose();
       }
       inputTensor.dispose();
-      imageTensor.dispose();
       continue;
     }
 
@@ -299,8 +321,8 @@ async function main() {
       pred.dispose();
     }
     inputTensor.dispose();
-    imageTensor.dispose();
   }
+  normalizeScalar.dispose();
 
   const outputPayload = {
     video: args.videoName,

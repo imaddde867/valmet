@@ -18,7 +18,7 @@ def parse_args() -> argparse.Namespace:
         "model-197536060022980608_tf-js_2023-05-04T05_50_49.038047Z_model.json"
     )
     default_manifest = repo_root / "outputs/frame_manifest.json"
-    default_frames = repo_root / "outputs/frames/model"
+    default_frames = repo_root / "outputs/frames/highres"
     default_output = repo_root / "outputs/detections/pilot_plant.json"
     default_labels = repo_root / (
         "web/models/tfjs_baseline/tensorflow_automl_model/"
@@ -50,6 +50,18 @@ def parse_args() -> argparse.Namespace:
         type=float,
         default=0.5,
         help="IoU threshold for NMS (default: 0.5).",
+    )
+    parser.add_argument(
+        "--input-width",
+        type=int,
+        default=224,
+        help="Width fed into the TFJS model (decoder output is resized if needed).",
+    )
+    parser.add_argument(
+        "--input-height",
+        type=int,
+        default=224,
+        help="Height fed into the TFJS model (decoder output is resized if needed).",
     )
     parser.add_argument(
         "--node-script",
@@ -86,6 +98,8 @@ def main() -> None:
         cmd.extend(["--thresholds", str(args.thresholds)])
     cmd.extend(["--max-dets", str(args.max_dets)])
     cmd.extend(["--iou-threshold", str(args.iou_threshold)])
+    cmd.extend(["--input-width", str(args.input_width)])
+    cmd.extend(["--input-height", str(args.input_height)])
 
     print("Running:", " ".join(map(str, cmd)))
     subprocess.run(cmd, check=True)
